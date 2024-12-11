@@ -1,65 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Product list with cart</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./index.js" defer></script>
-</head>
+  <body>
+    <main>
+      <section id="desserts">
+        <div class="header">
+          <h2>Desserts</h2>
 
-<body>
-  Desserts
+          <a href="#cart">Go to Cart</a>
+        </div>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+        <ul class="desserts"></ul>
+      </section>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+      <aside></aside>
+    </main>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+    <dialog>
+      <img src="./assets/images/icon-order-confirmed.svg" alt="" class="icon" />
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
+      <h2>Order Confirmed</h2>
+      <p>We hope you enjoy your food!</p>
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
+      <div class="order"></div>
 
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-</body>
-
+      <button type="button" class="primary">Start New Order</button>
+    </dialog>
+  </body>
 </html>
